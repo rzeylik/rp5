@@ -9,7 +9,7 @@
         list-style: none;
         width: 100%;
         background: $extra-bg-gradient;
-        padding: 10px 5px;
+        padding: 9px 5px 8px 2px;
         border-radius: 0px 0px 5px 5px;
     }
 }
@@ -38,7 +38,7 @@
     }
 
     .archive__temperature {
-        margin: 0;
+        margin: 0 10px;
     }
 
     .archive__text {
@@ -63,6 +63,11 @@
     .header__activities-form {
         margin-bottom: 10px;
         max-width: 100%;
+        width: 100%;
+    }
+
+    .header__activities-button {
+        max-width: 125px;
         width: 100%;
     }
 
@@ -153,12 +158,13 @@
         justify-content: space-around;
     }
 
-    .header__activities-button {
-        max-width: 120px;
-        min-height: 34px;
-        margin: 0 10px;
-        width: 100%;
+    .header__activities-button {  
+        margin: 0 10px 10px;
         margin-bottom: 10px;
+
+        &:last-child {
+            margin-right: 10px;
+        }
     }
 
     .info__title h1 {

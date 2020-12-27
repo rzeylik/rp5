@@ -18,7 +18,7 @@ $(function () {
     })
 
     $('#table__more').on('click', function () {
-        $('#weather__table-hidden').slideToggle();
+        $('#weather__table-hidden').fadeToggle('fast');
 
         if (newsFlag == 0) {
             $('#table__more-text').html("Згорнути таблицю");

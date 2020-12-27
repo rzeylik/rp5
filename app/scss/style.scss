@@ -37,10 +37,10 @@ ul {
 }
 
 .container {
-    max-width: 1030px;
+    max-width: 1037px;
     margin: 0 auto;
     position: relative;
-    right: 90px;
+    right: 84px;
 }
 
 .wrapper {
@@ -72,7 +72,7 @@ ul {
 .header__logo {
     max-width: 100%;
     width: 18%;
-    padding: 15px 0;
+    padding: 7px 0;
     display: flex;
 }
 
@@ -80,10 +80,12 @@ ul {
     align-self: flex-end;
     max-height: 86px;
     max-width: 100%;
+    position: relative;
+    right: 16px;
 }
 
 .header__content {
-    max-width: 82%;
+    max-width: 820px;
     width: 100%;
 }
 
@@ -118,7 +120,7 @@ ul {
     list-style: none;
     width: 100%;
     background: $extra-bg-gradient;
-    padding: 10px 5px;
+    padding: 9px 5px 8px 2px;
     border-radius: 0px 0px 5px 5px;
 }
 .header__topMenu-item {
@@ -132,11 +134,11 @@ ul {
 .header__countries {
     display: flex;
     justify-content: space-between;
-    margin: 12px 0 4px;
+    margin: 14px 0 4px;
 }
 
 .header__countries-items {
-    margin-left: 13px;
+    margin-left: 11px;
 }
 .header__countries-item {
     display: inline-block;
@@ -145,11 +147,11 @@ ul {
 }
 
 .header__countries-rss {
-    min-width: 45px;
+    min-width: 49px;
 }
 
 .header__countries-rss-text {
-    margin-right: 2px;
+    margin-right: 4px;
 }
 
 .header__countries-rss-link {
@@ -157,7 +159,7 @@ ul {
 }
 
 .header__activities {
-    padding: 10px 0;
+    padding: 11px 0 9px;
     display: flex;
     justify-content: space-between;
 }
@@ -166,16 +168,20 @@ ul {
     display: flex;
     flex-grow: 1;
     background-color: #fff;
-    padding: 3px 5px;
+    padding: 3px 7px 3px 3px;
     border-radius: 5px;
-    margin-right: 7px;
+    margin-right: 5px;
 }
 
 .header__activities-form-input {
     border: none;
     width: 100%;
-    padding: 8px 0px 8px 9px;
+    padding: 8px 0px 8px 8px;
     margin-right: 10px;
+}
+
+.header__activities-form-input::placeholder {
+    color: rgb(149, 149, 149);
 }
 
 .header__activities-form-search {
@@ -193,6 +199,7 @@ ul {
 }
 
 .header__activities-button {
+    width: 115px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -200,6 +207,11 @@ ul {
     padding: 4px 6px;
     border-radius: 5px;
     margin-right: 5px;
+    min-height: 34px;
+
+    &:last-child {
+        margin-right: 2px;
+    }
 }
 
 .header__activities-button:hover {
@@ -218,13 +230,13 @@ ul {
 }
 
 .content {
-    padding-top: 14px;
+    padding-top: 16px;
     background: $content-gradient;
 }
 
 .breadcrumps {
     color: $extra-text-color;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     font-size: 12px;
     a {
         position: relative;
@@ -430,6 +442,7 @@ ul {
     font-weight: 700;
     overflow-x: auto;
     overflow-y: hidden;
+    font-size: 12px;
 }
 
 .weather__days::-webkit-scrollbar {
@@ -456,7 +469,7 @@ ul {
     color: #fff;
     flex-grow: 1;
     justify-content: flex-end;
-    
+
 }
 
 .weather__days-item.active {
@@ -468,13 +481,11 @@ ul {
 .weather__days-item {
     position: relative;
     background: $extra-bg-gradient;
-    padding: 10px 25px;
+    padding: 10px 15px;
     max-width: 120px;
     width: 100%;
     border-radius: 10px 10px 0% 0% / 30px 30px 4px 4px;
 
-    // 20px 20px 0% 0% / 35px 35px 0% 0%;
-    // 10% 10% 0% 0% / 85% 85% 20% 20%
     &::before {
         content: '';
         position: absolute;
@@ -600,9 +611,10 @@ tr.row-underline {
 }
 
 .weather__table-sun,
-.weather__table-moon {
+.weather__table-moon,
+.weather__table-moon-phase {
     td {
-        padding: 0.3rem 0.2rem;
+        padding: 0.3rem 0.15rem;
     }
 }
 
